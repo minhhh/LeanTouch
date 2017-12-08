@@ -1,0 +1,21 @@
+{
+  "name": "LeanTouch",
+  "version": "1.3.1",
+  "description": "Lean Touch is an input library that makes handling gestures (e.g. Pinch, Twist) incredibly easy across all devices and resolutions",
+  "main": "index.js",
+  "author": "",
+  "license": "",
+  "files": [
+    "index.js",
+    "Assets"
+  ],
+  "scripts": {
+    "postinstall": "node index.js",
+    "unity": "rm -fr node_modules && DIR=`pwd` yarn install --flat --prod --verbose"
+  },
+  "dependencies": {
+    "minimist": "ssh://github.com/substack/minimist.git#0.0.8",
+    "mkdirp": "ssh://github.com/substack/node-mkdirp.git#0.5.1",
+    "ncp": "ssh://github.com/AvianFlu/ncp.git#v2.0.0"
+  }
+}
